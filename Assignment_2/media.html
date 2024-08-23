@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Multimedia Element</h1>
+    <h2>Image</h2>
+    <div>
+      <img
+        src="https://pbs.twimg.com/profile_images/1805274172303589380/ox7aS2HN_400x400.jpg"
+        alt="A developer"
+      />
+    </div>
+    <h2>Picture Element</h2>
+    <picture>
+      <source
+        media="(min-width: 800px)"
+        srcset="
+          /Assignment_2/img/pelumi-360.jpg   360w,
+          /Assignment_2/img/Pelumi-720.jpg   720w,
+          /Assignment_2/img/pelumi-1440.jpg 1440w
+        "
+        sizes="33.3vw"
+      />
+      <source
+        srcset="
+          /Assignment_2/img/Pelumi-720.jpg 2x,
+          /Assignment_2/img/pelumi-360.jpg 1x
+        "
+      />
+      <img
+        src="/Assignment_2/img/Pelumi.jpg"
+        alt="A handsome boy"
+        width="400"
+        height="400"
+      />
+    </picture>
+    <h2>Audio Element</h2>
+    <div class="audio">
+      <audio controls>
+        <source src="audio/aboutMe.mp3" type="audio/mp3" />
+        <source src="audio/aboutme2.ogg" type="audio/ogg" />
+        your browser does not support the audio element
+      </audio>
+    </div>
+    <div class="video">
+      <h2>Video Element</h2>
+      <video class="video" controls>
+        <source src="video/Fun_with_family.mp4" type="video/mp4" />
+        <source src="video/Grandma_Birthday.mov" type="video/quicktime" />
+        your browser do not support the video element
+      </video>
+    </div>
+
+    <style>
+      * {
+        padding: 1px;
+      }
+
+      .video {
+        width: auto;
+        height: 80vh;
+        margin-inline-start: 1px;
+      }
+
+    </style>
+  </body>
+</html>

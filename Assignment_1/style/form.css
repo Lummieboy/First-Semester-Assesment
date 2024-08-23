@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 1440vw;
+}
+
+.signin {
+    text-align: right;
+    font-family: "Roboto";
+    margin-top: 46px;
+    font-size: 16px;
+}
+
+.signin a {
+    text-decoration: none;
+    color: #0367f2;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.heading {
+    margin-top: 32px;
+}
+
+.heading h2 {
+    margin: 6px 0;
+}
+
+.heading p {
+    margin-bottom: 8px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+} 
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    background-color:aliceblue;
+    border-radius: 5px;
+}
+
+ .about div {
+    display: grid;
+}  
+
+.password {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    column-gap: 32px;
+}
+
+.agree {
+    padding: 10px;
+    color: rgb(133, 136, 141);
+    line-height: 10px;
+    font-family: "Roboto";
+    margin-top: 25px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    font-size: 19px;
+    text-decoration: none;
+    /* margin: 8px; */
+}
+
+.agree a {
+    text-decoration: none;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 16px 0;
+    margin: 16px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    object-fit: contain;
+    height: 30%;
+}
+
+
+.image img {
+    width: 70%;
+    height: auto;
+}
+
+.image h1 {
+    font-size: 2.187rem;
+    text-align: center;
+    margin: 0 0 35px;
+    letter-spacing: -0.51px;
+    padding: 10px;
+}
+
+.icon {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.icon a {
+    width: 16px;
+    height: auto;
+    /* color: #0367f2; */
+}
+
+.media-icon svg {
+    color: #0367f2;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+}
+
+.Tel {
+    font-size: 12px;
+    font-family: "Roboto";
+    line-height: 180%;
+    letter-spacing: .02rem;
+    color: #000812;
+    padding: 5px;
+}
+
+.copy {
+    font-size: 14px;
+    font-family: "Roboto";
+    line-height: 30px;
+    letter-spacing: -.01rem;
+    color: #000812;
+}
